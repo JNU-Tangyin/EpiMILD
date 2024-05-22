@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\caption{Comparative performance with 0\% masked}
+\label{mask_0.00}
+\begin{tabular}{l|l|cc|cc|cc|cc|cc|cc|cc|cc|cc|cc}
+\toprule
+    & {} & \multicolumn{10}{l}{value} \\
+    & metric & \multicolumn{5}{l}{cer} & \multicolumn{5}{l}{wrc} \\
+    & budget & 0.03125 & 0.0625 & 0.125 & 0.25 &  0.5 & 0.03125 & 0.0625 & 0.125 & 0.25 &  0.5 \\
+method & dataset &         &        &       &      &      &         &        &       &      &      \\
+\midrule
+IIBidder & ipinyou &    0.01 &   0.02 &  0.03 & 0.03 & 0.03 &    0.00 &   0.00 &  0.00 & 0.00 & 0.00 \\
+PPO\_GAIL & ipinyou &    0.01 &   0.01 &  0.02 & 0.02 & 0.03 &    0.00 &   0.00 &  0.00 & 0.00 & 0.00 \\
+AC\_GAIL & ipinyou &    0.01 &   0.01 &  0.01 & 0.01 & 0.01 &    0.00 &   0.00 &  0.00 & 0.00 & 0.00 \\
+PPO & ipinyou &    0.00 &   0.01 &  0.02 & 0.01 & 0.02 &    0.00 &   0.00 &  0.00 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
